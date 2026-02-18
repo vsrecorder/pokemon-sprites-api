@@ -1,0 +1,15 @@
+services:
+  pokemon-sprites-api:
+    image: vsrecorder/pokemon-sprites-api:latest
+    restart: always
+    network_mode: "host"
+    ports:
+      - 8998:8998
+    environment:
+      - TZ=Asia/Tokyo
+      - DB_HOSTNAME=${DB_HOSTNAME}
+      - DB_PORT=${DB_PORT}
+      - DB_USER_NAME=${DB_USER_NAME}
+      - DB_USER_PASSWORD=${DB_USER_PASSWORD}
+      - DB_NAME=${DB_NAME}
+
