@@ -23,7 +23,7 @@ func (i *PokemonSprite) FindAll(
 	ctx context.Context,
 ) ([]*entity.PokemonSprite, error) {
 	var pokemonSprites []*model.PokemonSprite
-	if err := i.db.WithContext(ctx).Find(&pokemonSprites).Error; err != nil {
+	if err := i.db.WithContext(ctx).Order("id ASC").Find(&pokemonSprites).Error; err != nil {
 		return nil, err
 	}
 
