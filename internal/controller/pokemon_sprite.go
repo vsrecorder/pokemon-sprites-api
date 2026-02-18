@@ -31,7 +31,7 @@ func NewPokemonSprite(
 func (c *PokemonSprite) RegisterRoute(relativePath string) {
 	r := c.router.Group(relativePath + PokemonSpritePath)
 	r.GET(
-		"/",
+		"",
 		c.GetAll,
 	)
 }

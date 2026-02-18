@@ -111,6 +111,7 @@ func main() {
 		AllowOrigins: []string{
 			"http://localhost:3000",
 			"https://vsrecorder.mobi",
+			"https://beta.vsrecorder.mobi",
 			"https://local.vsrecorder.mobi",
 		},
 		AllowCredentials: false,
@@ -129,7 +130,7 @@ func main() {
 		ctx, stop := signal.NotifyContext(context.Background(), syscall.SIGINT, syscall.SIGTERM)
 		defer stop()
 
-		server := NewAPIServer(":8994", r, db)
+		server := NewAPIServer(":8998", r, db)
 		if err := server.Start(ctx); err != nil {
 			log.Fatalf("failed to run server: %v", err)
 		}
