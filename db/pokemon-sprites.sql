@@ -4,134 +4,530 @@ CREATE TABLE pokemon_sprites (
     name    VARCHAR(256) NOT NULL
 );
 
-INSERT INTO pokemon_sprites VALUES (
-    '0001',
-    'フシギダネ'
-);
+INSERT INTO pokemon_sprites VALUES ('0001','フシギダネ');
+INSERT INTO pokemon_sprites VALUES ('0002','フシギソウ');
+INSERT INTO pokemon_sprites VALUES ('0003','フシギバナ');
+INSERT INTO pokemon_sprites VALUES ('0003_mega','メガフシギバナ');
+INSERT INTO pokemon_sprites VALUES ('0003_gmax','フシギバナ キョダイマックスのすがた');
+INSERT INTO pokemon_sprites VALUES ('0004','ヒトカゲ');
+INSERT INTO pokemon_sprites VALUES ('0005','リザード');
+INSERT INTO pokemon_sprites VALUES ('0006','リザードン');
+INSERT INTO pokemon_sprites VALUES ('0006_mega_x','メガリザードンＸ');
+INSERT INTO pokemon_sprites VALUES ('0006_mega_y','メガリザードンＹ');
+INSERT INTO pokemon_sprites VALUES ('0006_gmax','リザードン キョダイマックスのすがた');
+INSERT INTO pokemon_sprites VALUES ('0007','ゼニガメ');
+INSERT INTO pokemon_sprites VALUES ('0008','カメール');
+INSERT INTO pokemon_sprites VALUES ('0009','カメックス');
+INSERT INTO pokemon_sprites VALUES ('0009_mega','メガカメックス');
+INSERT INTO pokemon_sprites VALUES ('0009_gmax','カメックス キョダイマックスのすがた');
+INSERT INTO pokemon_sprites VALUES ('0010','キャタピー');
+INSERT INTO pokemon_sprites VALUES ('0011','トランセル');
+INSERT INTO pokemon_sprites VALUES ('0012','バタフリー');
+INSERT INTO pokemon_sprites VALUES ('0012_gmax','バタフリー キョダイマックスのすがた');
+INSERT INTO pokemon_sprites VALUES ('0013','ビードル');
+INSERT INTO pokemon_sprites VALUES ('0014','コクーン');
+INSERT INTO pokemon_sprites VALUES ('0015','スピアー');
+INSERT INTO pokemon_sprites VALUES ('0015_mega','メガスピアー');
+INSERT INTO pokemon_sprites VALUES ('0016','ポッポ');
+INSERT INTO pokemon_sprites VALUES ('0017','ピジョン');
+INSERT INTO pokemon_sprites VALUES ('0018','ピジョット');
+INSERT INTO pokemon_sprites VALUES ('0018_mega','メガピジョット');
+INSERT INTO pokemon_sprites VALUES ('0019','コラッタ');
+INSERT INTO pokemon_sprites VALUES ('0019_alola','コラッタ アローラのすがた');
+INSERT INTO pokemon_sprites VALUES ('0020','ラッタ');
+INSERT INTO pokemon_sprites VALUES ('0020_alola','ラッタ アローラのすがた');
+INSERT INTO pokemon_sprites VALUES ('0021','オニスズメ');
+INSERT INTO pokemon_sprites VALUES ('0022','オニドリル');
+INSERT INTO pokemon_sprites VALUES ('0023','アーボ');
+INSERT INTO pokemon_sprites VALUES ('0024','アーボック');
+INSERT INTO pokemon_sprites VALUES ('0025','ピカチュウ');
+INSERT INTO pokemon_sprites VALUES ('0025_gmax','ピカチュウ キョダイマックスのすがた');
+INSERT INTO pokemon_sprites VALUES ('0026','ライチュウ');
+INSERT INTO pokemon_sprites VALUES ('0026_alola','ライチュウ アローラのすがた');
+INSERT INTO pokemon_sprites VALUES ('0026_mega_x','メガライチュウＸ');
+INSERT INTO pokemon_sprites VALUES ('0026_mega_y','メガライチュウY');
+INSERT INTO pokemon_sprites VALUES ('0027','サンド');
+INSERT INTO pokemon_sprites VALUES ('0027_alola','サンド アローラのすがた');
+INSERT INTO pokemon_sprites VALUES ('0028','サンドパン');
+INSERT INTO pokemon_sprites VALUES ('0028_alola','サンドパン アローラのすがた');
+INSERT INTO pokemon_sprites VALUES ('0029','ニドラン♀');
+INSERT INTO pokemon_sprites VALUES ('0030','ニドリーナ');
+INSERT INTO pokemon_sprites VALUES ('0031','ニドクイン');
+INSERT INTO pokemon_sprites VALUES ('0032','ニドラン♂');
+INSERT INTO pokemon_sprites VALUES ('0033','ニドリーノ');
+INSERT INTO pokemon_sprites VALUES ('0034','ニドキング');
+INSERT INTO pokemon_sprites VALUES ('0035','ピッピ');
+INSERT INTO pokemon_sprites VALUES ('0036','ピクシー');
+INSERT INTO pokemon_sprites VALUES ('0036_mega','メガピクシー');
+INSERT INTO pokemon_sprites VALUES ('0037','ロコン');
+INSERT INTO pokemon_sprites VALUES ('0037_alola','ロコン アローラのすがた');
+INSERT INTO pokemon_sprites VALUES ('0038','キュウコン');
+INSERT INTO pokemon_sprites VALUES ('0038_alola','キュウコン アローラのすがた');
+INSERT INTO pokemon_sprites VALUES ('0039','プリン');
+INSERT INTO pokemon_sprites VALUES ('0040','プクリン');
+INSERT INTO pokemon_sprites VALUES ('0041','ズバット');
+INSERT INTO pokemon_sprites VALUES ('0042','ゴルバット');
+INSERT INTO pokemon_sprites VALUES ('0043','ナゾノクサ');
+INSERT INTO pokemon_sprites VALUES ('0044','クサイハナ');
+INSERT INTO pokemon_sprites VALUES ('0045','ラフレシア');
+INSERT INTO pokemon_sprites VALUES ('0046','パラス');
+INSERT INTO pokemon_sprites VALUES ('0047','パラセクト');
+INSERT INTO pokemon_sprites VALUES ('0048','コンパン');
+INSERT INTO pokemon_sprites VALUES ('0049','モルフォン');
+INSERT INTO pokemon_sprites VALUES ('0050','ディグダ');
+INSERT INTO pokemon_sprites VALUES ('0050_alola','ディグダ アローラのすがた');
+INSERT INTO pokemon_sprites VALUES ('0051','ダグトリオ');
+INSERT INTO pokemon_sprites VALUES ('0051_alola','ダグトリオ アローラのすがた');
+INSERT INTO pokemon_sprites VALUES ('0052','ニャース');
+INSERT INTO pokemon_sprites VALUES ('0052_alola','ニャース アローラのすがた');
+INSERT INTO pokemon_sprites VALUES ('0052_galar','ニャース ガラルのすがた');
+INSERT INTO pokemon_sprites VALUES ('0052_gmax','ニャース キョダイマックスのすがた');
+INSERT INTO pokemon_sprites VALUES ('0053','ペルシアン');
+INSERT INTO pokemon_sprites VALUES ('0053_alola','ペルシアン アローラのすがた');
+INSERT INTO pokemon_sprites VALUES ('0054','コダック');
+INSERT INTO pokemon_sprites VALUES ('0055','ゴルダック');
+INSERT INTO pokemon_sprites VALUES ('0056','マンキー');
+INSERT INTO pokemon_sprites VALUES ('0057','オコリザル');
+INSERT INTO pokemon_sprites VALUES ('0058','ガーディ');
+INSERT INTO pokemon_sprites VALUES ('0058_hisui','ガーディ ヒスイのすがた');
+INSERT INTO pokemon_sprites VALUES ('0059','ウインディ');
+INSERT INTO pokemon_sprites VALUES ('0059_hisui','ウインディ ヒスイのすがた');
+INSERT INTO pokemon_sprites VALUES ('0060','ニョロモ');
+INSERT INTO pokemon_sprites VALUES ('0061','ニョロゾ');
+INSERT INTO pokemon_sprites VALUES ('0062','ニョロボン');
+INSERT INTO pokemon_sprites VALUES ('0063','ケーシィ');
+INSERT INTO pokemon_sprites VALUES ('0064','ユンゲラー');
+INSERT INTO pokemon_sprites VALUES ('0065','フーディン');
+INSERT INTO pokemon_sprites VALUES ('0065_mega','メガフーディン');
+INSERT INTO pokemon_sprites VALUES ('0066','ワンリキー');
+INSERT INTO pokemon_sprites VALUES ('0067','ゴーリキー');
+INSERT INTO pokemon_sprites VALUES ('0068','カイリキー');
+INSERT INTO pokemon_sprites VALUES ('0068_gmax','カイリキー キョダイマックスのすがた');
+INSERT INTO pokemon_sprites VALUES ('0069','マダツボミ');
+INSERT INTO pokemon_sprites VALUES ('0070','ウツドン');
+INSERT INTO pokemon_sprites VALUES ('0071','ウツボット');
+INSERT INTO pokemon_sprites VALUES ('0071_mega','メガウツボット');
+INSERT INTO pokemon_sprites VALUES ('0072','メノクラゲ');
+INSERT INTO pokemon_sprites VALUES ('0073','ドククラゲ');
+INSERT INTO pokemon_sprites VALUES ('0074','イシツブテ');
+INSERT INTO pokemon_sprites VALUES ('0074_alola','イシツブテ アローラのすがた');
+INSERT INTO pokemon_sprites VALUES ('0075','ゴローン');
+INSERT INTO pokemon_sprites VALUES ('0075_alola','ゴローン アローラのすがた');
+INSERT INTO pokemon_sprites VALUES ('0076','ゴローニャ');
+INSERT INTO pokemon_sprites VALUES ('0076_alola','ゴローニャ アローラのすがた');
+INSERT INTO pokemon_sprites VALUES ('0077','ポニータ');
+INSERT INTO pokemon_sprites VALUES ('0077_galar','ポニータ ガラルのすがた');
+INSERT INTO pokemon_sprites VALUES ('0078','ギャロップ');
+INSERT INTO pokemon_sprites VALUES ('0078_galar','ギャロップ ガラルのすがた');
+INSERT INTO pokemon_sprites VALUES ('0079','ヤドン');
+INSERT INTO pokemon_sprites VALUES ('0079_galar','ヤドン ガラルのすがた');
+INSERT INTO pokemon_sprites VALUES ('0080','ヤドラン');
+INSERT INTO pokemon_sprites VALUES ('0080_mega','メガヤドラン');
+INSERT INTO pokemon_sprites VALUES ('0080_galar','ヤドラン ガラルのすがた');
+INSERT INTO pokemon_sprites VALUES ('0081','コイル');
+INSERT INTO pokemon_sprites VALUES ('0082','レアコイル');
+INSERT INTO pokemon_sprites VALUES ('0083','カモネギ');
+INSERT INTO pokemon_sprites VALUES ('0083_galar','カモネギ ガラルのすがた');
+INSERT INTO pokemon_sprites VALUES ('0084','ドードー');
+INSERT INTO pokemon_sprites VALUES ('0085','ドードリオ');
+INSERT INTO pokemon_sprites VALUES ('0086','パウワウ');
+INSERT INTO pokemon_sprites VALUES ('0087','ジュゴン');
+INSERT INTO pokemon_sprites VALUES ('0088','ベトベター');
+INSERT INTO pokemon_sprites VALUES ('0088_alola','ベトベター アローラのすがた');
+INSERT INTO pokemon_sprites VALUES ('0089','ベトベトン');
+INSERT INTO pokemon_sprites VALUES ('0089_alola','ベトベトン アローラのすがた');
+INSERT INTO pokemon_sprites VALUES ('0090','シェルダー');
+INSERT INTO pokemon_sprites VALUES ('0091','パルシェン');
+INSERT INTO pokemon_sprites VALUES ('0092','ゴース');
+INSERT INTO pokemon_sprites VALUES ('0093','ゴースト');
+INSERT INTO pokemon_sprites VALUES ('0094','ゲンガー');
+INSERT INTO pokemon_sprites VALUES ('0094_mega','メガゲンガー');
+INSERT INTO pokemon_sprites VALUES ('0094_gmax','ゲンガー キョダイマックスのすがた');
+INSERT INTO pokemon_sprites VALUES ('0095','イワーク');
+INSERT INTO pokemon_sprites VALUES ('0096','スリープ');
+INSERT INTO pokemon_sprites VALUES ('0097','スリーパー');
+INSERT INTO pokemon_sprites VALUES ('0098','クラブ');
+INSERT INTO pokemon_sprites VALUES ('0099','キングラー');
+INSERT INTO pokemon_sprites VALUES ('0099_gmax','キングラー キョダイマックスのすがた');
+INSERT INTO pokemon_sprites VALUES ('0100','ビリリダマ');
+INSERT INTO pokemon_sprites VALUES ('0100_hisui','ビリリダマ ヒスイのすがた');
+INSERT INTO pokemon_sprites VALUES ('0101','マルマイン');
+INSERT INTO pokemon_sprites VALUES ('0101_hisui','マルマイン ヒスイのすがた');
+INSERT INTO pokemon_sprites VALUES ('0102', 'タマタマ');
+INSERT INTO pokemon_sprites VALUES ('0103', 'ナッシー');
+INSERT INTO pokemon_sprites VALUES ('0103_alola', 'ナッシー アローラのすがた');
+INSERT INTO pokemon_sprites VALUES ('0104', 'カラカラ');
+INSERT INTO pokemon_sprites VALUES ('0105', 'ガラガラ');
+INSERT INTO pokemon_sprites VALUES ('0105_alola', 'ガラガラ アローラのすがた');
+INSERT INTO pokemon_sprites VALUES ('0106', 'サワムラー');
+INSERT INTO pokemon_sprites VALUES ('0107', 'エビワラー');
+INSERT INTO pokemon_sprites VALUES ('0108', 'ベロリンガ');
+INSERT INTO pokemon_sprites VALUES ('0109', 'ドガース');
+INSERT INTO pokemon_sprites VALUES ('0110', 'マタドガス');
+INSERT INTO pokemon_sprites VALUES ('0110_galar', 'マタドガス ガラルのすがた');
+INSERT INTO pokemon_sprites VALUES ('0111', 'サイホーン');
+INSERT INTO pokemon_sprites VALUES ('0112', 'サイドン');
+INSERT INTO pokemon_sprites VALUES ('0113', 'ラッキー');
+INSERT INTO pokemon_sprites VALUES ('0114', 'モンジャラ');
+INSERT INTO pokemon_sprites VALUES ('0115', 'ガルーラ');
+INSERT INTO pokemon_sprites VALUES ('0115_mega', 'メガガルーラ');
+INSERT INTO pokemon_sprites VALUES ('0116', 'タッツー');
+INSERT INTO pokemon_sprites VALUES ('0117', 'シードラ');
+INSERT INTO pokemon_sprites VALUES ('0118', 'トサキント');
+INSERT INTO pokemon_sprites VALUES ('0119', 'アズマオウ');
+INSERT INTO pokemon_sprites VALUES ('0120', 'ヒトデマン');
+INSERT INTO pokemon_sprites VALUES ('0121', 'スターミー');
+INSERT INTO pokemon_sprites VALUES ('0121_mega', 'メガスターミー');
+INSERT INTO pokemon_sprites VALUES ('0122', 'バリヤード');
+INSERT INTO pokemon_sprites VALUES ('0122_galar', 'バリヤード ガラルのすがた');
+INSERT INTO pokemon_sprites VALUES ('0123', 'ストライク');
+INSERT INTO pokemon_sprites VALUES ('0124', 'ルージュラ');
+INSERT INTO pokemon_sprites VALUES ('0125', 'エレブー');
+INSERT INTO pokemon_sprites VALUES ('0126', 'ブーバー');
+INSERT INTO pokemon_sprites VALUES ('0127', 'カイロス');
+INSERT INTO pokemon_sprites VALUES ('0127_mega', 'メガカイロス');
+INSERT INTO pokemon_sprites VALUES ('0128', 'ケンタロス');
+INSERT INTO pokemon_sprites VALUES ('0128_paldea_combat', 'ケンタロス パルデアのすがた・コンバット種');
+INSERT INTO pokemon_sprites VALUES ('0128_paldea_blaze', 'ケンタロス パルデアのすがた・ブレイズ種');
+INSERT INTO pokemon_sprites VALUES ('0128_paldea_aqua', 'ケンタロス パルデアのすがた・ウォーター種');
+INSERT INTO pokemon_sprites VALUES ('0129', 'コイキング');
+INSERT INTO pokemon_sprites VALUES ('0130', 'ギャラドス');
+INSERT INTO pokemon_sprites VALUES ('0130_mega', 'メガギャラドス');
+INSERT INTO pokemon_sprites VALUES ('0131', 'ラプラス');
+INSERT INTO pokemon_sprites VALUES ('0131_gmax', 'ラプラス キョダイマックスのすがた');
+INSERT INTO pokemon_sprites VALUES ('0132', 'メタモン');
+INSERT INTO pokemon_sprites VALUES ('0133', 'イーブイ');
+INSERT INTO pokemon_sprites VALUES ('0133_gmax', 'イーブイ キョダイマックスのすがた');
+INSERT INTO pokemon_sprites VALUES ('0134', 'シャワーズ');
+INSERT INTO pokemon_sprites VALUES ('0135', 'サンダース');
+INSERT INTO pokemon_sprites VALUES ('0136', 'ブースター');
+INSERT INTO pokemon_sprites VALUES ('0137', 'ポリゴン');
+INSERT INTO pokemon_sprites VALUES ('0138', 'オムナイト');
+INSERT INTO pokemon_sprites VALUES ('0139', 'オムスター');
+INSERT INTO pokemon_sprites VALUES ('0140', 'カブト');
+INSERT INTO pokemon_sprites VALUES ('0141', 'カブトプス');
+INSERT INTO pokemon_sprites VALUES ('0142', 'プテラ');
+INSERT INTO pokemon_sprites VALUES ('0142_mega', 'メガプテラ');
+INSERT INTO pokemon_sprites VALUES ('0143', 'カビゴン');
+INSERT INTO pokemon_sprites VALUES ('0143_gmax', 'カビゴン キョダイマックスのすがた');
+INSERT INTO pokemon_sprites VALUES ('0144', 'フリーザー');
+INSERT INTO pokemon_sprites VALUES ('0144_galar', 'フリーザー ガラルのすがた');
+INSERT INTO pokemon_sprites VALUES ('0145', 'サンダー');
+INSERT INTO pokemon_sprites VALUES ('0145_galar', 'サンダー ガラルのすがた');
+INSERT INTO pokemon_sprites VALUES ('0146', 'ファイヤー');
+INSERT INTO pokemon_sprites VALUES ('0146_galar', 'ファイヤー ガラルのすがた');
+INSERT INTO pokemon_sprites VALUES ('0147', 'ミニリュウ');
+INSERT INTO pokemon_sprites VALUES ('0148', 'ハクリュー');
+INSERT INTO pokemon_sprites VALUES ('0149', 'カイリュー');
+INSERT INTO pokemon_sprites VALUES ('0150', 'ミュウツー');
+INSERT INTO pokemon_sprites VALUES ('0150_mega_x', 'メガミュウツーX');
+INSERT INTO pokemon_sprites VALUES ('0150_mega_y', 'メガミュウツーY');
+INSERT INTO pokemon_sprites VALUES ('0151', 'ミュウ');
 
-INSERT INTO pokemon_sprites VALUES (
-    '0002',
-    'フシギソウ'
-);
+INSERT INTO pokemon_sprites VALUES ('0152','チコリータ');
+INSERT INTO pokemon_sprites VALUES ('0153','ベイリーフ');
+INSERT INTO pokemon_sprites VALUES ('0154','メガニウム');
+INSERT INTO pokemon_sprites VALUES ('0154_mega','メガメガニウム');
+INSERT INTO pokemon_sprites VALUES ('0155','ヒノアラシ');
+INSERT INTO pokemon_sprites VALUES ('0156','マグマラシ');
+INSERT INTO pokemon_sprites VALUES ('0157','バクフーン');
+INSERT INTO pokemon_sprites VALUES ('0157_hisui','バクフーン ヒスイのすがた');
+INSERT INTO pokemon_sprites VALUES ('0158','ワニノコ');
+INSERT INTO pokemon_sprites VALUES ('0159','アリゲイツ');
+INSERT INTO pokemon_sprites VALUES ('0160','オーダイル');
+INSERT INTO pokemon_sprites VALUES ('0160_mega','メガオーダイル');
+INSERT INTO pokemon_sprites VALUES ('0161','オタチ');
+INSERT INTO pokemon_sprites VALUES ('0162','オオタチ');
+INSERT INTO pokemon_sprites VALUES ('0163','ホーホー');
+INSERT INTO pokemon_sprites VALUES ('0164','ヨルノズク');
+INSERT INTO pokemon_sprites VALUES ('0165','レディバ');
+INSERT INTO pokemon_sprites VALUES ('0166','レディアン');
+INSERT INTO pokemon_sprites VALUES ('0167','イトマル');
+INSERT INTO pokemon_sprites VALUES ('0168','アリアドス');
+INSERT INTO pokemon_sprites VALUES ('0169','クロバット');
+INSERT INTO pokemon_sprites VALUES ('0170','チョンチー');
+INSERT INTO pokemon_sprites VALUES ('0171','ランターン');
+INSERT INTO pokemon_sprites VALUES ('0172','ピチュー');
+INSERT INTO pokemon_sprites VALUES ('0173','ピィ');
+INSERT INTO pokemon_sprites VALUES ('0174','ププリン');
+INSERT INTO pokemon_sprites VALUES ('0175','トゲピー');
+INSERT INTO pokemon_sprites VALUES ('0176','トゲチック');
+INSERT INTO pokemon_sprites VALUES ('0177','ネイティ');
+INSERT INTO pokemon_sprites VALUES ('0178','ネイティオ');
+INSERT INTO pokemon_sprites VALUES ('0179','メリープ');
+INSERT INTO pokemon_sprites VALUES ('0180','モココ');
+INSERT INTO pokemon_sprites VALUES ('0181','デンリュウ');
+INSERT INTO pokemon_sprites VALUES ('0181_mega','メガデンリュウ');
+INSERT INTO pokemon_sprites VALUES ('0182','キレイハナ');
+INSERT INTO pokemon_sprites VALUES ('0183','マリル');
+INSERT INTO pokemon_sprites VALUES ('0184','マリルリ');
+INSERT INTO pokemon_sprites VALUES ('0185','ウソッキー');
+INSERT INTO pokemon_sprites VALUES ('0186','ニョロトノ');
+INSERT INTO pokemon_sprites VALUES ('0187','ハネッコ');
+INSERT INTO pokemon_sprites VALUES ('0188','ポポッコ');
+INSERT INTO pokemon_sprites VALUES ('0189','ワタッコ');
+INSERT INTO pokemon_sprites VALUES ('0190','エイパム');
+INSERT INTO pokemon_sprites VALUES ('0191','ヒマナッツ');
+INSERT INTO pokemon_sprites VALUES ('0192','キマワリ');
+INSERT INTO pokemon_sprites VALUES ('0193','ヤンヤンマ');
+INSERT INTO pokemon_sprites VALUES ('0194','ウパー');
+INSERT INTO pokemon_sprites VALUES ('0194_paldea','ウパー パルデアのすがた');
+INSERT INTO pokemon_sprites VALUES ('0195','ヌオー');
+INSERT INTO pokemon_sprites VALUES ('0196','エーフィ');
+INSERT INTO pokemon_sprites VALUES ('0197','ブラッキー');
+INSERT INTO pokemon_sprites VALUES ('0198','ヤミカラス');
+INSERT INTO pokemon_sprites VALUES ('0199','ヤドキング');
+INSERT INTO pokemon_sprites VALUES ('0199_galar','ヤドキング ガラルのすがた');
+INSERT INTO pokemon_sprites VALUES ('0200','ムウマ');
+INSERT INTO pokemon_sprites VALUES ('0201','アンノーン');
+INSERT INTO pokemon_sprites VALUES ('0201_A','アンノーン Aのかたち');
+INSERT INTO pokemon_sprites VALUES ('0201_B','アンノーン Bのかたち');
+INSERT INTO pokemon_sprites VALUES ('0201_C','アンノーン Cのかたち');
+INSERT INTO pokemon_sprites VALUES ('0201_D','アンノーン Dのかたち');
+INSERT INTO pokemon_sprites VALUES ('0201_E','アンノーン Eのかたち');
+INSERT INTO pokemon_sprites VALUES ('0201_F','アンノーン Fのかたち');
+INSERT INTO pokemon_sprites VALUES ('0201_G','アンノーン Gのかたち');
+INSERT INTO pokemon_sprites VALUES ('0201_H','アンノーン Hのかたち');
+INSERT INTO pokemon_sprites VALUES ('0201_I','アンノーン Iのかたち');
+INSERT INTO pokemon_sprites VALUES ('0201_J','アンノーン Jのかたち');
+INSERT INTO pokemon_sprites VALUES ('0201_K','アンノーン Kのかたち');
+INSERT INTO pokemon_sprites VALUES ('0201_L','アンノーン Lのかたち');
+INSERT INTO pokemon_sprites VALUES ('0201_M','アンノーン Mのかたち');
+INSERT INTO pokemon_sprites VALUES ('0201_N','アンノーン Nのかたち');
+INSERT INTO pokemon_sprites VALUES ('0201_O','アンノーン Oのかたち');
+INSERT INTO pokemon_sprites VALUES ('0201_P','アンノーン Pのかたち');
+INSERT INTO pokemon_sprites VALUES ('0201_Q','アンノーン Qのかたち');
+INSERT INTO pokemon_sprites VALUES ('0201_R','アンノーン Rのかたち');
+INSERT INTO pokemon_sprites VALUES ('0201_S','アンノーン Sのかたち');
+INSERT INTO pokemon_sprites VALUES ('0201_T','アンノーン Tのかたち');
+INSERT INTO pokemon_sprites VALUES ('0201_U','アンノーン Uのかたち');
+INSERT INTO pokemon_sprites VALUES ('0201_V','アンノーン Vのかたち');
+INSERT INTO pokemon_sprites VALUES ('0201_W','アンノーン Wのかたち');
+INSERT INTO pokemon_sprites VALUES ('0201_X','アンノーン Xのかたち');
+INSERT INTO pokemon_sprites VALUES ('0201_Y','アンノーン Yのかたち');
+INSERT INTO pokemon_sprites VALUES ('0201_Z','アンノーン Zのかたち');
+INSERT INTO pokemon_sprites VALUES ('0202','ソーナンス');
+INSERT INTO pokemon_sprites VALUES ('0203','キリンリキ');
+INSERT INTO pokemon_sprites VALUES ('0204','クヌギダマ');
+INSERT INTO pokemon_sprites VALUES ('0205','フォレトス');
+INSERT INTO pokemon_sprites VALUES ('0206','ノコッチ');
+INSERT INTO pokemon_sprites VALUES ('0207','グライガー');
+INSERT INTO pokemon_sprites VALUES ('0208','ハガネール');
+INSERT INTO pokemon_sprites VALUES ('0208_mega','メガハガネール');
+INSERT INTO pokemon_sprites VALUES ('0209','ブルー');
+INSERT INTO pokemon_sprites VALUES ('0210','グランブル');
+INSERT INTO pokemon_sprites VALUES ('0211','ハリーセン');
+INSERT INTO pokemon_sprites VALUES ('0211_hisui','ハリーセン ヒスイのすがた');
+INSERT INTO pokemon_sprites VALUES ('0212','ハッサム');
+INSERT INTO pokemon_sprites VALUES ('0212_mega','メガハッサム');
+INSERT INTO pokemon_sprites VALUES ('0213','ツボツボ');
+INSERT INTO pokemon_sprites VALUES ('0214','ヘラクロス');
+INSERT INTO pokemon_sprites VALUES ('0214_mega','メガヘラクロス');
+INSERT INTO pokemon_sprites VALUES ('0215','ニューラ');
+INSERT INTO pokemon_sprites VALUES ('0215_hisui','ニューラ ヒスイのすがた');
+INSERT INTO pokemon_sprites VALUES ('0216','ヒメグマ');
+INSERT INTO pokemon_sprites VALUES ('0217','リングマ');
+INSERT INTO pokemon_sprites VALUES ('0218','マグマッグ');
+INSERT INTO pokemon_sprites VALUES ('0219','マグカルゴ');
+INSERT INTO pokemon_sprites VALUES ('0220','ウリムー');
+INSERT INTO pokemon_sprites VALUES ('0221','イノムー');
+INSERT INTO pokemon_sprites VALUES ('0222','サニーゴ');
+INSERT INTO pokemon_sprites VALUES ('0222_galar','サニーゴ ガラルのすがた');
+INSERT INTO pokemon_sprites VALUES ('0223','テッポウオ');
+INSERT INTO pokemon_sprites VALUES ('0224','オクタン');
+INSERT INTO pokemon_sprites VALUES ('0225','デリバード');
+INSERT INTO pokemon_sprites VALUES ('0226','マンタイン');
+INSERT INTO pokemon_sprites VALUES ('0227','エアームド');
+INSERT INTO pokemon_sprites VALUES ('0227_mega','メガエアームド');
+INSERT INTO pokemon_sprites VALUES ('0228','デルビル');
+INSERT INTO pokemon_sprites VALUES ('0229','ヘルガー');
+INSERT INTO pokemon_sprites VALUES ('0229_mega','メガヘルガー');
+INSERT INTO pokemon_sprites VALUES ('0230','キングドラ');
+INSERT INTO pokemon_sprites VALUES ('0231','ゴマゾウ');
+INSERT INTO pokemon_sprites VALUES ('0232','ドンファン');
+INSERT INTO pokemon_sprites VALUES ('0233','ポリゴン２');
+INSERT INTO pokemon_sprites VALUES ('0234','オドシシ');
+INSERT INTO pokemon_sprites VALUES ('0235','ドーブル');
+INSERT INTO pokemon_sprites VALUES ('0236','バルキー');
+INSERT INTO pokemon_sprites VALUES ('0237','カポエラー');
+INSERT INTO pokemon_sprites VALUES ('0238','ムチュール');
+INSERT INTO pokemon_sprites VALUES ('0239','エレキッド');
+INSERT INTO pokemon_sprites VALUES ('0240','ブビィ');
+INSERT INTO pokemon_sprites VALUES ('0241','ミルタンク');
+INSERT INTO pokemon_sprites VALUES ('0242','ハピナス');
+INSERT INTO pokemon_sprites VALUES ('0243','ライコウ');
+INSERT INTO pokemon_sprites VALUES ('0244','エンテイ');
+INSERT INTO pokemon_sprites VALUES ('0245','スイクン');
+INSERT INTO pokemon_sprites VALUES ('0246','ヨーギラス');
+INSERT INTO pokemon_sprites VALUES ('0247','サナギラス');
+INSERT INTO pokemon_sprites VALUES ('0248','バンギラス');
+INSERT INTO pokemon_sprites VALUES ('0248_mega','メガバンギラス');
+INSERT INTO pokemon_sprites VALUES ('0249','ルギア');
+INSERT INTO pokemon_sprites VALUES ('0250','ホウオウ');
+INSERT INTO pokemon_sprites VALUES ('0251','セレビィ');
 
-INSERT INTO pokemon_sprites VALUES (
-    '0003',
-    'フシギバナ'
-);
-INSERT INTO pokemon_sprites VALUES (
-    '0003_mega',
-    'メガフシギバナ'
-);
-
-INSERT INTO pokemon_sprites VALUES (
-    '0003_gmax',
-    'フシギバナ キョダイマックスのすがた'
-);
-
-INSERT INTO pokemon_sprites VALUES (
-    '0004',
-    'ヒトカゲ'
-);
-
-INSERT INTO pokemon_sprites VALUES (
-    '0005',
-    'リザード'
-);
-
-INSERT INTO pokemon_sprites VALUES (
-    '0006',
-    'リザードン'
-);
-
-INSERT INTO pokemon_sprites VALUES (
-    '0006_mega_x',
-    'メガリザードンＸ'
-);
-
-INSERT INTO pokemon_sprites VALUES (
-    '0006_mega_y',
-    'メガリザードンＹ'
-);
-
-INSERT INTO pokemon_sprites VALUES (
-    '0006_gmax',
-    'リザードン キョダイマックスのすがた'
-);
-
-INSERT INTO pokemon_sprites VALUES (
-    '0007',
-    'ゼニガメ'
-);
-
-INSERT INTO pokemon_sprites VALUES (
-    '0008',
-    'カメール'
-);
-
-INSERT INTO pokemon_sprites VALUES (
-    '0009',
-    'カメックス'
-);
-
-INSERT INTO pokemon_sprites VALUES (
-    '0009_mega',
-    'メガカメックス'
-);
-
-INSERT INTO pokemon_sprites VALUES (
-    '0009_gmax',
-    'カメックス キョダイマックスのすがた'
-);
-
-INSERT INTO pokemon_sprites VALUES (
-    '0010',
-    'キャタピー'
-);
-
-INSERT INTO pokemon_sprites VALUES (
-    '0011',
-    'トランセル'
-);
-
-INSERT INTO pokemon_sprites VALUES (
-    '0012',
-    'バタフリー'
-);
-
-INSERT INTO pokemon_sprites VALUES (
-    '0012_gmax',
-    'バタフリー キョダイマックスのすがた'
-);
-
-INSERT INTO pokemon_sprites VALUES (
-    '0013',
-    'ビードル'
-);
-
-INSERT INTO pokemon_sprites VALUES (
-    '0014',
-    'コクーン'
-);
-
-INSERT INTO pokemon_sprites VALUES (
-    '0015',
-    'スピアー'
-);
-
-INSERT INTO pokemon_sprites VALUES (
-    '0015_mega',
-    'メガスピアー'
-);
-
-INSERT INTO pokemon_sprites VALUES (
-    '001',
-    ''
-);
-
-INSERT INTO pokemon_sprites VALUES (
-    '001',
-    ''
-);
-
-
-
+INSERT INTO pokemon_sprites VALUES ('0252','キモリ');
+INSERT INTO pokemon_sprites VALUES ('0253','ジュプトル');
+INSERT INTO pokemon_sprites VALUES ('0254','ジュカイン');
+INSERT INTO pokemon_sprites VALUES ('0254_mega','メガジュカイン');
+INSERT INTO pokemon_sprites VALUES ('0255','アチャモ');
+INSERT INTO pokemon_sprites VALUES ('0256','ワカシャモ');
+INSERT INTO pokemon_sprites VALUES ('0257','バシャーモ');
+INSERT INTO pokemon_sprites VALUES ('0257_mega','メガバシャーモ');
+INSERT INTO pokemon_sprites VALUES ('0258','ミズゴロウ');
+INSERT INTO pokemon_sprites VALUES ('0259','ヌマクロー');
+INSERT INTO pokemon_sprites VALUES ('0260','ラグラージ');
+INSERT INTO pokemon_sprites VALUES ('0260_mega','メガラグラージ');
+INSERT INTO pokemon_sprites VALUES ('0261','ポチエナ');
+INSERT INTO pokemon_sprites VALUES ('0262','グラエナ');
+INSERT INTO pokemon_sprites VALUES ('0263','ジグザグマ');
+INSERT INTO pokemon_sprites VALUES ('0264','マッスグマ');
+INSERT INTO pokemon_sprites VALUES ('0265','ケムッソ');
+INSERT INTO pokemon_sprites VALUES ('0266','カラサリス');
+INSERT INTO pokemon_sprites VALUES ('0267','アゲハント');
+INSERT INTO pokemon_sprites VALUES ('0268','マユルド');
+INSERT INTO pokemon_sprites VALUES ('0269','ドクケイル');
+INSERT INTO pokemon_sprites VALUES ('0270','ハスボー');
+INSERT INTO pokemon_sprites VALUES ('0271','ハスブレロ');
+INSERT INTO pokemon_sprites VALUES ('0272','ルンパッパ');
+INSERT INTO pokemon_sprites VALUES ('0273','タネボー');
+INSERT INTO pokemon_sprites VALUES ('0274','コノハナ');
+INSERT INTO pokemon_sprites VALUES ('0275','ダーテング');
+INSERT INTO pokemon_sprites VALUES ('0276','スバメ');
+INSERT INTO pokemon_sprites VALUES ('0277','オオスバメ');
+INSERT INTO pokemon_sprites VALUES ('0278','キャモメ');
+INSERT INTO pokemon_sprites VALUES ('0279','ペリッパー');
+INSERT INTO pokemon_sprites VALUES ('0280','ラルトス');
+INSERT INTO pokemon_sprites VALUES ('0281','キルリア');
+INSERT INTO pokemon_sprites VALUES ('0282','サーナイト');
+INSERT INTO pokemon_sprites VALUES ('0282_mega','メガサーナイト');
+INSERT INTO pokemon_sprites VALUES ('0283','アメタマ');
+INSERT INTO pokemon_sprites VALUES ('0284','アメモース');
+INSERT INTO pokemon_sprites VALUES ('0285','キノココ');
+INSERT INTO pokemon_sprites VALUES ('0286','キノガッサ');
+INSERT INTO pokemon_sprites VALUES ('0287','ナマケロ');
+INSERT INTO pokemon_sprites VALUES ('0288','ヤルキモノ');
+INSERT INTO pokemon_sprites VALUES ('0289','ケッキング');
+INSERT INTO pokemon_sprites VALUES ('0290','ツチニン');
+INSERT INTO pokemon_sprites VALUES ('0291','テッカニン');
+INSERT INTO pokemon_sprites VALUES ('0292','ヌケニン');
+INSERT INTO pokemon_sprites VALUES ('0293','ゴニョニョ');
+INSERT INTO pokemon_sprites VALUES ('0294','ドゴーム');
+INSERT INTO pokemon_sprites VALUES ('0295','バクオング');
+INSERT INTO pokemon_sprites VALUES ('0296','マクノシタ');
+INSERT INTO pokemon_sprites VALUES ('0297','ハリテヤマ');
+INSERT INTO pokemon_sprites VALUES ('0298','ルリリ');
+INSERT INTO pokemon_sprites VALUES ('0299','ノズパス');
+INSERT INTO pokemon_sprites VALUES ('0300','エネコ');
+INSERT INTO pokemon_sprites VALUES ('0301','エネコロロ');
+INSERT INTO pokemon_sprites VALUES ('0302','ヤミラミ');
+INSERT INTO pokemon_sprites VALUES ('0302_mega','メガヤミラミ');
+INSERT INTO pokemon_sprites VALUES ('0303','クチート');
+INSERT INTO pokemon_sprites VALUES ('0303_mega','メガクチート');
+INSERT INTO pokemon_sprites VALUES ('0304','ココドラ');
+INSERT INTO pokemon_sprites VALUES ('0305','コドラ');
+INSERT INTO pokemon_sprites VALUES ('0306','ボスゴドラ');
+INSERT INTO pokemon_sprites VALUES ('0306_mega','メガボスゴドラ');
+INSERT INTO pokemon_sprites VALUES ('0307','アサナン');
+INSERT INTO pokemon_sprites VALUES ('0308','チャーレム');
+INSERT INTO pokemon_sprites VALUES ('0308_mega','メガチャーレム');
+INSERT INTO pokemon_sprites VALUES ('0309','ラクライ');
+INSERT INTO pokemon_sprites VALUES ('0310','ライボルト');
+INSERT INTO pokemon_sprites VALUES ('0310_mega','メガライボルト');
+INSERT INTO pokemon_sprites VALUES ('0311','プラスル');
+INSERT INTO pokemon_sprites VALUES ('0312','マイナン');
+INSERT INTO pokemon_sprites VALUES ('0313','バルビート');
+INSERT INTO pokemon_sprites VALUES ('0314','イルミーゼ');
+INSERT INTO pokemon_sprites VALUES ('0315','ロゼリア');
+INSERT INTO pokemon_sprites VALUES ('0316','ゴクリン');
+INSERT INTO pokemon_sprites VALUES ('0317','マルノーム');
+INSERT INTO pokemon_sprites VALUES ('0318','キバニア');
+INSERT INTO pokemon_sprites VALUES ('0319','サメハダー');
+INSERT INTO pokemon_sprites VALUES ('0319_mega','メガサメハダー');
+INSERT INTO pokemon_sprites VALUES ('0320','ホエルコ');
+INSERT INTO pokemon_sprites VALUES ('0321','ホエルオー');
+INSERT INTO pokemon_sprites VALUES ('0322','ドンメル');
+INSERT INTO pokemon_sprites VALUES ('0323','バクーダ');
+INSERT INTO pokemon_sprites VALUES ('0323_mega','メガバクーダ');
+INSERT INTO pokemon_sprites VALUES ('0324','コータス');
+INSERT INTO pokemon_sprites VALUES ('0325','バネブー');
+INSERT INTO pokemon_sprites VALUES ('0326','ブーピッグ');
+INSERT INTO pokemon_sprites VALUES ('0327','パッチール');
+INSERT INTO pokemon_sprites VALUES ('0328','ナックラー');
+INSERT INTO pokemon_sprites VALUES ('0329','ビブラーバ');
+INSERT INTO pokemon_sprites VALUES ('0330','フライゴン');
+INSERT INTO pokemon_sprites VALUES ('0331','サボネア');
+INSERT INTO pokemon_sprites VALUES ('0332','ノクタス');
+INSERT INTO pokemon_sprites VALUES ('0333','チルット');
+INSERT INTO pokemon_sprites VALUES ('0334','チルタリス');
+INSERT INTO pokemon_sprites VALUES ('0334_mega','メガチルタリス');
+INSERT INTO pokemon_sprites VALUES ('0335','ザングース');
+INSERT INTO pokemon_sprites VALUES ('0336','ハブネーク');
+INSERT INTO pokemon_sprites VALUES ('0337','ルナトーン');
+INSERT INTO pokemon_sprites VALUES ('0338','ソルロック');
+INSERT INTO pokemon_sprites VALUES ('0339','ドジョッチ');
+INSERT INTO pokemon_sprites VALUES ('0340','ナマズン');
+INSERT INTO pokemon_sprites VALUES ('0341','ヘイガニ');
+INSERT INTO pokemon_sprites VALUES ('0342','シザリガー');
+INSERT INTO pokemon_sprites VALUES ('0343','ヤジロン');
+INSERT INTO pokemon_sprites VALUES ('0344','ネンドール');
+INSERT INTO pokemon_sprites VALUES ('0345','リリーラ');
+INSERT INTO pokemon_sprites VALUES ('0346','ユレイドル');
+INSERT INTO pokemon_sprites VALUES ('0347','アノプス');
+INSERT INTO pokemon_sprites VALUES ('0348','アーマルド');
+INSERT INTO pokemon_sprites VALUES ('0349','ヒンバス');
+INSERT INTO pokemon_sprites VALUES ('0350','ミロカロス');
+INSERT INTO pokemon_sprites VALUES ('0351','ポワルン');
+INSERT INTO pokemon_sprites VALUES ('0351_sunny','ポワルン たいようのすがた');
+INSERT INTO pokemon_sprites VALUES ('0351_rainy','ポワルン あまみずのすがた');
+INSERT INTO pokemon_sprites VALUES ('0351_snowy','ポワルン ゆきぐものすがた');
+INSERT INTO pokemon_sprites VALUES ('0352','カクレオン');
+INSERT INTO pokemon_sprites VALUES ('0353','カゲボウズ');
+INSERT INTO pokemon_sprites VALUES ('0354','ジュペッタ');
+INSERT INTO pokemon_sprites VALUES ('0354_mega','メガジュペッタ');
+INSERT INTO pokemon_sprites VALUES ('0355','ヨマワル');
+INSERT INTO pokemon_sprites VALUES ('0356','サマヨール');
+INSERT INTO pokemon_sprites VALUES ('0357','トロピウス');
+INSERT INTO pokemon_sprites VALUES ('0358','チリーン');
+INSERT INTO pokemon_sprites VALUES ('0359','アブソル');
+INSERT INTO pokemon_sprites VALUES ('0359_mega','メガアブソル');
+INSERT INTO pokemon_sprites VALUES ('0359_mega_z','メガアブソルZ');
+INSERT INTO pokemon_sprites VALUES ('0360','ソーナノ');
+INSERT INTO pokemon_sprites VALUES ('0361','ユキワラシ');
+INSERT INTO pokemon_sprites VALUES ('0362','オニゴーリ');
+INSERT INTO pokemon_sprites VALUES ('0362_mega','メガオニゴーリ');
+INSERT INTO pokemon_sprites VALUES ('0363','タマザラシ');
+INSERT INTO pokemon_sprites VALUES ('0364','トドグラー');
+INSERT INTO pokemon_sprites VALUES ('0365','トドゼルガ');
+INSERT INTO pokemon_sprites VALUES ('0366','パールル');
+INSERT INTO pokemon_sprites VALUES ('0367','ハンテール');
+INSERT INTO pokemon_sprites VALUES ('0368','サクラビス');
+INSERT INTO pokemon_sprites VALUES ('0369','ジーランス');
+INSERT INTO pokemon_sprites VALUES ('0370','ラブカス');
+INSERT INTO pokemon_sprites VALUES ('0371','タツベイ');
+INSERT INTO pokemon_sprites VALUES ('0372','コモルー');
+INSERT INTO pokemon_sprites VALUES ('0373','ボーマンダ');
+INSERT INTO pokemon_sprites VALUES ('0373_mega','メガボーマンダ');
+INSERT INTO pokemon_sprites VALUES ('0374','ダンバル');
+INSERT INTO pokemon_sprites VALUES ('0375','メタング');
+INSERT INTO pokemon_sprites VALUES ('0376','メタグロス');
+INSERT INTO pokemon_sprites VALUES ('0376_mega','メガメタグロス');
+INSERT INTO pokemon_sprites VALUES ('0377','レジロック');
+INSERT INTO pokemon_sprites VALUES ('0378','レジアイス');
+INSERT INTO pokemon_sprites VALUES ('0379','レジスチル');
+INSERT INTO pokemon_sprites VALUES ('0380','ラティアス');
+INSERT INTO pokemon_sprites VALUES ('0380_mega','メガラティアス');
+INSERT INTO pokemon_sprites VALUES ('0381','ラティオス');
+INSERT INTO pokemon_sprites VALUES ('0381_mega','メガラティオス');
+INSERT INTO pokemon_sprites VALUES ('0382','カイオーガ');
+INSERT INTO pokemon_sprites VALUES ('0382_primal','ゲンシカイオーガ');
+INSERT INTO pokemon_sprites VALUES ('0383','グラードン');
+INSERT INTO pokemon_sprites VALUES ('0383_primal','ゲンシグラードン');
+INSERT INTO pokemon_sprites VALUES ('0384','レックウザ');
+INSERT INTO pokemon_sprites VALUES ('0384_mega','メガレックウザ');
+INSERT INTO pokemon_sprites VALUES ('0385','ジラーチ');
+INSERT INTO pokemon_sprites VALUES ('0386','デオキシス');
+INSERT INTO pokemon_sprites VALUES ('0386_normal','デオキシス ノーマルフォルム');
+INSERT INTO pokemon_sprites VALUES ('0386_attack','デオキシス アタックフォルム');
+INSERT INTO pokemon_sprites VALUES ('0386_defense','デオキシス ディフェンスフォルム');
+INSERT INTO pokemon_sprites VALUES ('0386_speed','デオキシス スピードフォルム');
