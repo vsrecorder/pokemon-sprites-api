@@ -98,7 +98,6 @@ func (s *APIServer) Shutdown() error {
 func main() {
 	if err := godotenv.Load(); err != nil {
 		log.Printf("failed to load .env file: %v", err)
-		os.Exit(ExitCodeNG)
 	}
 
 	dbHostname := os.Getenv("DB_HOSTNAME")
