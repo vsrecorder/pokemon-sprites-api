@@ -17,7 +17,9 @@ image:
 
 .PHONY: deploy
 deploy:
-	docker compose pull && docker compose down && docker compose up -d
+	git pull
+	docker compose pull
+	docker compose up -d --no-deps --wait pokemon-sprites-api
 
 .PHONY: restart
 restart:
