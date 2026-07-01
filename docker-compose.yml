@@ -2,6 +2,7 @@ services:
   pokemon-sprites-api:
     image: vsrecorder/pokemon-sprites-api:latest
     restart: always
+    network_mode: "host"
     ports:
       - 8998:8998
     environment:
