@@ -8,11 +8,11 @@ run:
 .PHONY: build
 build:
 	go mod tidy
-	go build -o bin/pokemon-sprites-api cmd/main.go
+	go build -o /dev/null cmd/main.go
 
 .PHONY: image
 image:
-	docker build . --no-cache -t vsrecorder/pokemon-sprites-api:local && \
+	docker build . --no-cache -t vsrecorder/pokemon-sprites-api:local
 	docker push vsrecorder/pokemon-sprites-api:local
 
 .PHONY: deploy
@@ -23,7 +23,8 @@ deploy:
 
 .PHONY: restart
 restart:
-	docker compose down && docker compose up -d
+	docker compose down
+	docker compose up -d
 
 .PHONY: up
 up:
