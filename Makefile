@@ -12,8 +12,8 @@ build:
 
 .PHONY: image
 image:
-	docker build . --no-cache -t vsrecorder/pokemon-sprites-api:local
-	docker push vsrecorder/pokemon-sprites-api:local
+	docker build . -t vsrecorder/pokemon-sprites-api:local
+	docker push       vsrecorder/pokemon-sprites-api:local
 
 .PHONY: deploy
 deploy:
