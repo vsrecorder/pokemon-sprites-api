@@ -219,6 +219,7 @@ INSERT INTO pokemon_sprites VALUES ('0146_galar', 'ファイヤー ガラルの�
 INSERT INTO pokemon_sprites VALUES ('0147', 'ミニリュウ');
 INSERT INTO pokemon_sprites VALUES ('0148', 'ハクリュー');
 INSERT INTO pokemon_sprites VALUES ('0149', 'カイリュー');
+INSERT INTO pokemon_sprites VALUES ('0149_mega', 'メガカイリュー');
 INSERT INTO pokemon_sprites VALUES ('0150', 'ミュウツー');
 INSERT INTO pokemon_sprites VALUES ('0150_mega_x', 'メガミュウツーX');
 INSERT INTO pokemon_sprites VALUES ('0150_mega_y', 'メガミュウツーY');
