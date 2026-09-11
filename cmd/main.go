@@ -28,7 +28,53 @@ const (
 
 const (
 	relativePath = "/api/v1beta"
+
+	// listenPort は HTTP を受けるポート。docker-compose.yml の ports と揃えること。
+	listenPort = "8998"
+
+	// healthPath は死活確認の経路。認証もDBアクセスも無い。
+	healthPath = "/health"
+
+	// healthCheckArg が渡された場合はサーバを起動せず、動いているプロセスへ
+	// 死活確認だけを行って終了する(docker の healthcheck から使う)。
+	healthCheckArg = "--health"
 )
+
+/*
+ * runHealthCheck は自分自身の /health を叩き、応答できていれば 0 を返す。
+ *
+ * このイメージは distroless(gcr.io/distroless/static)で、shell も curl も wget も
+ * 入っていない。そのため docker の healthcheck に書ける実行ファイルは、実質この
+ * バイナリ自身しかない。CMD ["/pokemon-sprites-api", "--health"] の形で使う。
+ *
+ * DB は見ない。ここで判定したいのは「プロセスが起きて HTTP を受けられる」ことで、
+ * DB の不調まで unhealthy に含めると、DB 復旧を待つあいだ `docker compose up --wait`
+ * が終わらず、コンテナ自体は正常なのにデプロイが止まってしまう。
+ */
+func runHealthCheck() int {
+	return runHealthCheckAt(listenPort)
+}
+
+// runHealthCheckAt は指定したポートの /health を叩く。
+// ポートを引数にしているのは、テストが実際に待ち受けているサービスと衝突しないよう
+// 空きポートを指せるようにするため(固定ポートだと、同じ機械で本体が動いているだけで落ちる)。
+func runHealthCheckAt(port string) int {
+	client := &http.Client{Timeout: 3 * time.Second}
+
+	res, err := client.Get("http://127.0.0.1:" + port + healthPath)
+	if err != nil {
+		fmt.Fprintln(os.Stderr, "health check failed:", err)
+		return ExitCodeNG
+	}
+	defer res.Body.Close()
+
+	if res.StatusCode != http.StatusOK {
+		fmt.Fprintln(os.Stderr, "health check failed: status", res.StatusCode)
+		return ExitCodeNG
+	}
+
+	return ExitCodeOK
+}
 
 type APIServer struct {
 	httpServer *http.Server
@@ -96,6 +142,11 @@ func (s *APIServer) Shutdown() error {
 }
 
 func main() {
+	// 死活確認だけを行うモード。サーバも DB 接続も要らないので最初に処理する。
+	if len(os.Args) > 1 && os.Args[1] == healthCheckArg {
+		os.Exit(runHealthCheck())
+	}
+
 	if err := godotenv.Load(); err != nil {
 		log.Printf("failed to load .env file: %v", err)
 	}
@@ -113,6 +164,17 @@ func main() {
 	}
 
 	r := gin.Default()
+
+	/*
+	 * 死活確認。docker の healthcheck(--health)から叩かれる。
+	 *
+	 * 認証もDBアクセスも持たせない。「応答できるか」だけを見る経路で、
+	 * DB の状態まで混ぜると停止判定の意味が変わってしまう(runHealthCheck のコメント参照)。
+	 */
+	r.GET(healthPath, func(ctx *gin.Context) {
+		ctx.String(http.StatusOK, "health")
+	})
+
 	r.SetTrustedProxies(nil)
 	r.Use(cors.New(cors.Config{
 		AllowHeaders: []string{
@@ -152,7 +214,7 @@ func main() {
 		)
 		defer stop()
 
-		server := NewAPIServer(":8998", r, db)
+		server := NewAPIServer(":"+listenPort, r, db)
 
 		if err := server.Start(ctx); err != nil {
 			log.Printf("server error: %v", err)

@@ -26,6 +26,21 @@ services:
     memswap_limit: 64m
     mem_reservation: 16m
     network_mode: "host"
+    #
+    # 応答できる状態になったかの判定。
+    #
+    # これが無いと `docker compose up --wait` は「コンテナが起動した」だけで完了し、
+    # HTTP を受けられる前にデプロイが終わったことになる。
+    #
+    # distroless で shell もツールも無いため、test に書けるのはバイナリ自身だけ。
+    # --health を渡すと、サーバは起動せず自分の /health を叩いて終了コードだけを返す。
+    #
+    healthcheck:
+      test: ["CMD", "/pokemon-sprites-api", "--health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
     ports:
       - 8998:8998
     environment:
