@@ -71,7 +71,7 @@ internal/
 
 ## 技術スタック
 
-- 言語: Go 1.25
+- 言語: Go 1.27
 - Web フレームワーク: [Gin](https://github.com/gin-gonic/gin)
 - ORM: [GORM](https://gorm.io/)（PostgreSQL ドライバ）
 - データベース: PostgreSQL
@@ -110,7 +110,7 @@ CREATE TABLE pokemon_sprites (
 make run
 ```
 
-サーバは `:8998` で起動します。
+サーバは `127.0.0.1:8998`(ループバックのみ)で起動します。本番も同じで、外からは nginx 経由でしか届きません。
 
 ## Makefile タスク
 

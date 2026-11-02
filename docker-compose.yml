@@ -41,6 +41,12 @@ services:
       timeout: 5s
       retries: 3
       start_period: 30s
+    #
+    # 注意: network_mode: host では、この ports は docker に無視される(公開の設定にならない)。
+    # 待ち受けるアドレスはアプリ自身が決めており、cmd/main.go の listenHost(127.0.0.1)で
+    # ループバックだけに絞っている(2026-10-31 の精査で、全インターフェースに開いていたのを直した)。
+    # host ネットワークをやめる場合は、ここを "127.0.0.1:ポート:ポート" の形にし、アプリ側の待ち受けも見直すこと。
+    #
     ports:
       - 8998:8998
     environment:

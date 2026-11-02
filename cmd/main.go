@@ -29,7 +29,16 @@ const (
 const (
 	relativePath = "/api/v1beta"
 
-	// listenPort は HTTP を受けるポート。docker-compose.yml の ports と揃えること。
+	// listenHost は HTTP を受けるアドレス。ループバックに限定する。
+	//
+	// docker-compose.yml は network_mode: host で動かすため、compose の ports は効かず、
+	// ここで決めたアドレスがそのままホストの待ち受けになる。以前の ":8998"(全インターフェース)
+	// では、クラウド側のパケットフィルタの設定ひとつで nginx・fail2ban・アクセスログを通らずに
+	// 外から直接叩ける状態だった(2026-10-31 の精査で指摘)。nginx は 127.0.0.1:8998 へ
+	// proxy_pass しているので、ループバックだけで足りる。
+	listenHost = "127.0.0.1"
+
+	// listenPort は HTTP を受けるポート。proxy リポジトリの nginx の proxy_pass と揃えること。
 	listenPort = "8998"
 
 	// healthPath は死活確認の経路。認証もDBアクセスも無い。
@@ -214,7 +223,7 @@ func main() {
 		)
 		defer stop()
 
-		server := NewAPIServer(":"+listenPort, r, db)
+		server := NewAPIServer(net.JoinHostPort(listenHost, listenPort), r, db)
 
 		if err := server.Start(ctx); err != nil {
 			log.Printf("server error: %v", err)
