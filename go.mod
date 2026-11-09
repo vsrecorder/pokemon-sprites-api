@@ -3,7 +3,7 @@ module github.com/vsrecorder/pokemon-sprites-api
 go 1.27.3
 
 require (
-	github.com/gin-contrib/cors v1.7.9
+	github.com/gin-contrib/cors v1.7.10
 	github.com/gin-gonic/gin v1.12.0
 	github.com/joho/godotenv v1.5.1
 	gorm.io/driver/postgres v1.6.3
